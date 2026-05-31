@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228263" />
+    <testcase name="test_aes_engine_basic" classname="test_aes_engine" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/peripherals/aes_engine/test_aes_engine.py" lineno="5" time="0.004946708679199219" sim_time_ns="120.0" ratio_time="24258.554077501445" />
+  </testsuite>
+</testsuites>

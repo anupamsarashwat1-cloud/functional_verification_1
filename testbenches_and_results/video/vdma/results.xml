@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228526" />
+    <testcase name="test_vdma_basic" classname="test_vdma" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/video/vdma/test_vdma.py" lineno="5" time="0.003923892974853516" sim_time_ns="120.0" ratio_time="30581.87386073642" />
+  </testsuite>
+</testsuites>

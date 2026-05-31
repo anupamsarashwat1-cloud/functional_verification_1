@@ -1,0 +1,9 @@
+SIM ?= icarus
+TOPLEVEL_LANG ?= verilog
+VERILOG_SOURCES += $(wildcard ../../../../memory/*.v)
+VERILOG_SOURCES += $(wildcard ../../../../interconnect/*.v)
+VERILOG_SOURCES += $(wildcard ../../../../common/*.v)
+COMPILE_ARGS += -I../../../../common -I../../../../memory -I../../../../interconnect
+TOPLEVEL = l2_tag_array
+MODULE = test_l2_tag_array
+include $(shell cocotb-config --makefiles)/Makefile.sim

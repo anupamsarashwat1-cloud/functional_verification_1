@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228509" />
+    <testcase name="test_qspi_controller_basic" classname="test_qspi_controller" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/storage/qspi_controller/test_qspi_controller.py" lineno="5" time="0.002796173095703125" sim_time_ns="120.0" ratio_time="42915.79809004093" />
+  </testsuite>
+</testsuites>

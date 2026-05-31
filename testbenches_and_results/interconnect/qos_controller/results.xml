@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780227915" />
+    <testcase name="test_qos_controller_basic" classname="test_qos_controller" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/interconnect/qos_controller/test_qos_controller.py" lineno="5" time="0.003846883773803711" sim_time_ns="120.0" ratio_time="31194.079950418345" />
+  </testsuite>
+</testsuites>

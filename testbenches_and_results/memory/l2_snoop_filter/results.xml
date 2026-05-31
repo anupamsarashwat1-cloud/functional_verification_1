@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228053" />
+    <testcase name="test_l2_snoop_filter_basic" classname="test_l2_snoop_filter" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/memory/l2_snoop_filter/test_l2_snoop_filter.py" lineno="5" time="0.014961004257202148" sim_time_ns="120.0" ratio_time="8020.851938614524" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780227814" />
+    <testcase name="test_apb_bridge_basic" classname="test_apb_bridge" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/interconnect/apb_bridge/test_apb_bridge.py" lineno="5" time="0.0014100074768066406" sim_time_ns="120.0" ratio_time="85105.93168752114" />
+  </testsuite>
+</testsuites>

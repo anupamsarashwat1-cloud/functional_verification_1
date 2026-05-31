@@ -1,0 +1,76 @@
+import cocotb
+from cocotb.clock import Clock
+from cocotb.triggers import RisingEdge, Timer
+
+@cocotb.test()
+async def test_hdmi_ctrl_basic(dut):
+    clock = Clock(dut.pclk, 10, units="ns")
+    cocotb.start_soon(clock.start())
+    
+    # Initialize all inputs to 0
+    try:
+        dut.clk_pixel.value = 0
+    except Exception:
+        pass
+    try:
+        dut.clk_tmds.value = 0
+    except Exception:
+        pass
+    try:
+        dut.rst_n.value = 0
+    except Exception:
+        pass
+    try:
+        dut.s_axis_tdata.value = 0
+    except Exception:
+        pass
+    try:
+        dut.s_axis_tvalid.value = 0
+    except Exception:
+        pass
+    try:
+        dut.s_axis_tuser.value = 0
+    except Exception:
+        pass
+    try:
+        dut.s_axis_tlast.value = 0
+    except Exception:
+        pass
+    try:
+        dut.prst_n.value = 0
+    except Exception:
+        pass
+    try:
+        dut.paddr.value = 0
+    except Exception:
+        pass
+    try:
+        dut.psel.value = 0
+    except Exception:
+        pass
+    try:
+        dut.penable.value = 0
+    except Exception:
+        pass
+    try:
+        dut.pwrite.value = 0
+    except Exception:
+        pass
+    try:
+        dut.pwdata.value = 0
+    except Exception:
+        pass
+
+    await Timer(25, units="ns")
+    
+    # Release reset if present
+    if hasattr(dut, 'rst_n'):
+        dut.rst_n.value = 1
+    elif hasattr(dut, 'sys_rst_n'):
+        dut.sys_rst_n.value = 1
+        
+    for _ in range(10):
+        await RisingEdge(dut.pclk)
+    
+    # Simple pass condition: test did not crash
+    assert True

@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228278" />
+    <testcase name="test_i2c_master_basic" classname="test_i2c_master" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/peripherals/i2c_master/test_i2c_master.py" lineno="5" time="0.006489992141723633" sim_time_ns="120.0" ratio_time="18490.00697990522" />
+  </testsuite>
+</testsuites>

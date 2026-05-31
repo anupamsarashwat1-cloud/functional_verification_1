@@ -1,0 +1,197 @@
+#! /usr/bin/env bash
+exec /home/anupam-sarashwat/miniforge3/bin/vvp -f "$0" "$@" <<'# EOF'
+:ivl_version "13.0 (devel)" "(0_8-6897-g58dcf39db-dirty)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/system.vpi";
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/v2005_math.vpi";
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/va_math.vpi";
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/v2009.vpi";
+S_0x28a73aa0 .scope package, "$unit" "$unit" 2 1;
+ .timescale -9 -12;
+S_0x28b04f90 .scope module, "ddr_phy_if" "ddr_phy_if" 3 5;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst_n";
+    .port_info 2 /INPUT 1 "dfi_ck_en";
+    .port_info 3 /INPUT 1 "dfi_cs_n";
+    .port_info 4 /INPUT 1 "dfi_ras_n";
+    .port_info 5 /INPUT 1 "dfi_cas_n";
+    .port_info 6 /INPUT 1 "dfi_we_n";
+    .port_info 7 /INPUT 3 "dfi_bank";
+    .port_info 8 /INPUT 16 "dfi_addr";
+    .port_info 9 /INPUT 1 "dfi_wrdata_valid";
+    .port_info 10 /INPUT 64 "dfi_wrdata";
+    .port_info 11 /INPUT 8 "dfi_wrdata_mask";
+    .port_info 12 /OUTPUT 64 "dfi_rddata";
+    .port_info 13 /OUTPUT 1 "dfi_rddata_valid";
+    .port_info 14 /OUTPUT 1 "ddr_ck_p";
+    .port_info 15 /OUTPUT 1 "ddr_ck_n";
+    .port_info 16 /OUTPUT 1 "ddr_cke";
+    .port_info 17 /OUTPUT 1 "ddr_cs_n";
+    .port_info 18 /OUTPUT 1 "ddr_ras_n";
+    .port_info 19 /OUTPUT 1 "ddr_cas_n";
+    .port_info 20 /OUTPUT 1 "ddr_we_n";
+    .port_info 21 /OUTPUT 3 "ddr_ba";
+    .port_info 22 /OUTPUT 16 "ddr_addr";
+    .port_info 23 /OUTPUT 8 "ddr_dm";
+    .port_info 24 /INOUT 64 "ddr_dq";
+    .port_info 25 /INOUT 8 "ddr_dqs_p";
+    .port_info 26 /INOUT 8 "ddr_dqs_n";
+o0x79e76868c468 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x28a17950 .functor BUFZ 1, o0x79e76868c468, C4<0>, C4<0>, C4<0>;
+o0x79e76868c498 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x28b672b0 .functor BUFZ 1, o0x79e76868c498, C4<0>, C4<0>, C4<0>;
+o0x79e76868c4c8 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x28a1cb30 .functor BUFZ 1, o0x79e76868c4c8, C4<0>, C4<0>, C4<0>;
+o0x79e76868c438 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x28a1cba0 .functor BUFZ 1, o0x79e76868c438, C4<0>, C4<0>, C4<0>;
+o0x79e76868c588 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x28a1cc70 .functor BUFZ 1, o0x79e76868c588, C4<0>, C4<0>, C4<0>;
+o0x79e76868c408 .functor BUFZ 3, C4<zzz>; HiZ drive
+L_0x28a1cd40 .functor BUFZ 3, o0x79e76868c408, C4<000>, C4<000>, C4<000>;
+o0x79e76868c3d8 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+L_0x28a1ce50 .functor BUFZ 16, o0x79e76868c3d8, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+o0x79e76868c618 .functor BUFZ 1, C4<z>; HiZ drive
+L_0x28a1d120 .functor BUFZ 1, o0x79e76868c618, C4<0>, C4<0>, C4<0>;
+L_0x79e7682ce018 .functor BUFT 1, C4<00000000>, C4<0>, C4<0>, C4<0>;
+v0x28b36570_0 .net/2u *"_ivl_14", 7 0, L_0x79e7682ce018;  1 drivers
+o0x79e76868c048 .functor BUFZ 64, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+; Elide local net with no drivers, v0x28b8c9a0_0 name=_ivl_18
+v0x28a17a60_0 .net *"_ivl_24", 7 0, L_0x28a1d210;  1 drivers
+o0x79e76868c0a8 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+; Elide local net with no drivers, v0x28a17b60_0 name=_ivl_26
+v0x28a16ac0_0 .net *"_ivl_30", 7 0, L_0x28a1d4d0;  1 drivers
+o0x79e76868c108 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+; Elide local net with no drivers, v0x28a15cd0_0 name=_ivl_32
+o0x79e76868c138 .functor BUFZ 1, C4<z>; HiZ drive
+v0x28a14be0_0 .net "clk", 0 0, o0x79e76868c138;  0 drivers
+v0x28a1b070_0 .net "ddr_addr", 15 0, L_0x28a1ce50;  1 drivers
+v0x28a1b150_0 .net "ddr_ba", 2 0, L_0x28a1cd40;  1 drivers
+v0x28a1b230_0 .net "ddr_cas_n", 0 0, L_0x28a1cba0;  1 drivers
+v0x28a1b2f0_0 .var "ddr_ck_n", 0 0;
+v0x28a1b3b0_0 .var "ddr_ck_p", 0 0;
+v0x28a1b470_0 .net "ddr_cke", 0 0, L_0x28a17950;  1 drivers
+v0x28a1b530_0 .net "ddr_cs_n", 0 0, L_0x28b672b0;  1 drivers
+v0x28a1b5f0_0 .net "ddr_dm", 7 0, L_0x28a1cf20;  1 drivers
+v0x28a1b6d0_0 .net "ddr_dq", 63 0, L_0x28a1d020;  1 drivers
+v0x28a1b7b0_0 .net "ddr_dqs_n", 7 0, L_0x28a1d640;  1 drivers
+v0x28a1b890_0 .net "ddr_dqs_p", 7 0, L_0x28a1d3b0;  1 drivers
+v0x28a1b970_0 .net "ddr_ras_n", 0 0, L_0x28a1cb30;  1 drivers
+v0x28a1ba30_0 .net "ddr_we_n", 0 0, L_0x28a1cc70;  1 drivers
+v0x28a1baf0_0 .net "dfi_addr", 15 0, o0x79e76868c3d8;  0 drivers
+v0x28a1bbd0_0 .net "dfi_bank", 2 0, o0x79e76868c408;  0 drivers
+v0x28a1bcb0_0 .net "dfi_cas_n", 0 0, o0x79e76868c438;  0 drivers
+v0x28a1bd70_0 .net "dfi_ck_en", 0 0, o0x79e76868c468;  0 drivers
+v0x28a1be30_0 .net "dfi_cs_n", 0 0, o0x79e76868c498;  0 drivers
+v0x28a1bef0_0 .net "dfi_ras_n", 0 0, o0x79e76868c4c8;  0 drivers
+v0x28a1bfb0_0 .var "dfi_rddata", 63 0;
+v0x28a1c090_0 .var "dfi_rddata_valid", 0 0;
+v0x28a1c150_0 .var "dfi_rddata_valid_d", 0 0;
+v0x28a1c210_0 .net "dfi_we_n", 0 0, o0x79e76868c588;  0 drivers
+o0x79e76868c5b8 .functor BUFZ 64, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0x28a1c2d0_0 .net "dfi_wrdata", 63 0, o0x79e76868c5b8;  0 drivers
+o0x79e76868c5e8 .functor BUFZ 8, C4<zzzzzzzz>; HiZ drive
+v0x28a1c3b0_0 .net "dfi_wrdata_mask", 7 0, o0x79e76868c5e8;  0 drivers
+v0x28a1c490_0 .net "dfi_wrdata_valid", 0 0, o0x79e76868c618;  0 drivers
+v0x28a1c550_0 .net "dqs_drive", 0 0, L_0x28a1d120;  1 drivers
+o0x79e76868c678 .functor BUFZ 1, C4<z>; HiZ drive
+v0x28a1c610_0 .net "rst_n", 0 0, o0x79e76868c678;  0 drivers
+E_0x28ad5f50/0 .event negedge, v0x28a1c610_0;
+E_0x28ad5f50/1 .event posedge, v0x28a14be0_0;
+E_0x28ad5f50 .event/or E_0x28ad5f50/0, E_0x28ad5f50/1;
+L_0x28a1cf20 .functor MUXZ 8, L_0x79e7682ce018, o0x79e76868c5e8, o0x79e76868c618, C4<>;
+L_0x28a1d020 .functor MUXZ 64, o0x79e76868c048, o0x79e76868c5b8, o0x79e76868c618, C4<>;
+LS_0x28a1d210_0_0 .concat [ 1 1 1 1], v0x28a1b3b0_0, v0x28a1b3b0_0, v0x28a1b3b0_0, v0x28a1b3b0_0;
+LS_0x28a1d210_0_4 .concat [ 1 1 1 1], v0x28a1b3b0_0, v0x28a1b3b0_0, v0x28a1b3b0_0, v0x28a1b3b0_0;
+L_0x28a1d210 .concat [ 4 4 0 0], LS_0x28a1d210_0_0, LS_0x28a1d210_0_4;
+L_0x28a1d3b0 .functor MUXZ 8, o0x79e76868c0a8, L_0x28a1d210, L_0x28a1d120, C4<>;
+LS_0x28a1d4d0_0_0 .concat [ 1 1 1 1], v0x28a1b2f0_0, v0x28a1b2f0_0, v0x28a1b2f0_0, v0x28a1b2f0_0;
+LS_0x28a1d4d0_0_4 .concat [ 1 1 1 1], v0x28a1b2f0_0, v0x28a1b2f0_0, v0x28a1b2f0_0, v0x28a1b2f0_0;
+L_0x28a1d4d0 .concat [ 4 4 0 0], LS_0x28a1d4d0_0_0, LS_0x28a1d4d0_0_4;
+L_0x28a1d640 .functor MUXZ 8, o0x79e76868c108, L_0x28a1d4d0, L_0x28a1d120, C4<>;
+    .scope S_0x28b04f90;
+T_0 ;
+    %wait E_0x28ad5f50;
+    %load/vec4 v0x28a1c610_0;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x28a1b3b0_0, 0;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0x28a1b2f0_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0x28a1bd70_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.2, 8;
+    %load/vec4 v0x28a1b3b0_0;
+    %inv;
+    %assign/vec4 v0x28a1b3b0_0, 0;
+    %load/vec4 v0x28a1b2f0_0;
+    %inv;
+    %assign/vec4 v0x28a1b2f0_0, 0;
+    %jmp T_0.3;
+T_0.2 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x28a1b3b0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x28a1b2f0_0, 0;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x28b04f90;
+T_1 ;
+    %wait E_0x28ad5f50;
+    %load/vec4 v0x28a1c610_0;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %pushi/vec4 0, 0, 64;
+    %assign/vec4 v0x28a1bfb0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x28a1c090_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x28a1c150_0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v0x28a1c490_0;
+    %nor/r;
+    %flag_set/vec4 9;
+    %flag_get/vec4 9;
+    %jmp/0 T_1.3, 9;
+    %load/vec4 v0x28a1be30_0;
+    %nor/r;
+    %and;
+T_1.3;
+    %flag_set/vec4 8;
+    %flag_get/vec4 8;
+    %jmp/0 T_1.2, 8;
+    %load/vec4 v0x28a1bcb0_0;
+    %nor/r;
+    %and;
+T_1.2;
+    %assign/vec4 v0x28a1c150_0, 0;
+    %load/vec4 v0x28a1c150_0;
+    %assign/vec4 v0x28a1c090_0, 0;
+    %load/vec4 v0x28a1c490_0;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.4, 8;
+    %load/vec4 v0x28a1b6d0_0;
+    %assign/vec4 v0x28a1bfb0_0, 0;
+T_1.4 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "../../../../memory/ddr_phy_if.v";
+# EOF

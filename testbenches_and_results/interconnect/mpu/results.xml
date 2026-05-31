@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780227913" />
+    <testcase name="test_mpu_basic" classname="test_mpu" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/interconnect/mpu/test_mpu.py" lineno="5" time="0.010251760482788086" sim_time_ns="120.0" ratio_time="11705.306635038025" />
+  </testsuite>
+</testsuites>

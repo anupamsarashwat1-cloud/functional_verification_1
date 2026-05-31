@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228524" />
+    <testcase name="test_mipi_csi2_rx_basic" classname="test_mipi_csi2_rx" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/video/mipi_csi2_rx/test_mipi_csi2_rx.py" lineno="5" time="0.009947538375854492" sim_time_ns="120.0" ratio_time="12063.285957385615" />
+  </testsuite>
+</testsuites>

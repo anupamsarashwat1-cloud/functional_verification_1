@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228036" />
+    <testcase name="test_ddr_phy_if_basic" classname="test_ddr_phy_if" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/memory/ddr_phy_if/test_ddr_phy_if.py" lineno="5" time="0.0025644302368164062" sim_time_ns="120.0" ratio_time="46794.0200818148" />
+  </testsuite>
+</testsuites>

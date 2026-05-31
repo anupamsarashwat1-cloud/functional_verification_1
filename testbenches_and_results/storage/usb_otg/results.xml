@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228512" />
+    <testcase name="test_usb_otg_basic" classname="test_usb_otg" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/storage/usb_otg/test_usb_otg.py" lineno="5" time="0.009222745895385742" sim_time_ns="120.0" ratio_time="13011.309360701083" />
+  </testsuite>
+</testsuites>

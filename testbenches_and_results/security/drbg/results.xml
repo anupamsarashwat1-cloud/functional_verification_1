@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228158" />
+    <testcase name="test_drbg_basic" classname="test_drbg" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/security/drbg/test_drbg.py" lineno="5" time="0.02118849754333496" sim_time_ns="120.0" ratio_time="5663.450169346581" />
+  </testsuite>
+</testsuites>

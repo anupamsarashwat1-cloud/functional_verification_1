@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780225801" />
+    <testcase name="test_decode_basic" classname="test_rv_decode" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/frontend/rv_decode/test_rv_decode.py" lineno="5" time="0.0033049583435058594" sim_time_ns="40.0" ratio_time="12103.026980233733" />
+  </testsuite>
+</testsuites>

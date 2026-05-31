@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228518" />
+    <testcase name="test_hdmi_ctrl_basic" classname="test_hdmi_ctrl" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/video/hdmi_ctrl/test_hdmi_ctrl.py" lineno="5" time="0.007436513900756836" sim_time_ns="120.0" ratio_time="16136.593248052322" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,75 @@
+#! /usr/bin/env bash
+exec /home/anupam-sarashwat/miniforge3/bin/vvp -f "$0" "$@" <<'# EOF'
+:ivl_version "13.0 (devel)" "(0_8-6897-g58dcf39db-dirty)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/system.vpi";
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/v2005_math.vpi";
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/va_math.vpi";
+:vpi_module "/home/anupam-sarashwat/miniforge3/lib/ivl/v2009.vpi";
+S_0x1bdf9ab0 .scope package, "$unit" "$unit" 2 1;
+ .timescale -9 -12;
+S_0x1bdf9c40 .scope module, "cdc_sync" "cdc_sync" 3 4;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "dst_clk";
+    .port_info 1 /INPUT 1 "rst_n";
+    .port_info 2 /INPUT 1 "data_in";
+    .port_info 3 /OUTPUT 1 "data_out";
+P_0x1bdf6db0 .param/l "STAGES" 0 3 6, +C4<00000000000000000000000000000010>;
+P_0x1bdf6df0 .param/l "WIDTH" 0 3 5, +C4<00000000000000000000000000000001>;
+v0x1be1d120_1 .array/port v0x1be1d120, 1;
+L_0x1be2d3d0 .functor BUFZ 1, v0x1be1d120_1, C4<0>, C4<0>, C4<0>;
+o0x75347608a018 .functor BUFZ 1, C4<z>; HiZ drive
+v0x1bdf9f20_0 .net "data_in", 0 0, o0x75347608a018;  0 drivers
+v0x1be1ceb0_0 .net "data_out", 0 0, L_0x1be2d3d0;  1 drivers
+o0x75347608a078 .functor BUFZ 1, C4<z>; HiZ drive
+v0x1be1cf90_0 .net "dst_clk", 0 0, o0x75347608a078;  0 drivers
+o0x75347608a0a8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x1be1d060_0 .net "rst_n", 0 0, o0x75347608a0a8;  0 drivers
+v0x1be1d120 .array "sync_ff", 1 0, 0 0;
+E_0x1be0a490/0 .event negedge, v0x1be1d060_0;
+E_0x1be0a490/1 .event posedge, v0x1be1cf90_0;
+E_0x1be0a490 .event/or E_0x1be0a490/0, E_0x1be0a490/1;
+    .scope S_0x1bdf9c40;
+T_0 ;
+    %wait E_0x1be0a490;
+    %load/vec4 v0x1be1d060_0;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %ix/load 3, 0, 0;
+    %flag_set/imm 4, 0;
+    %ix/load 4, 0, 0; Constant delay
+    %assign/vec4/a/d v0x1be1d120, 0, 4;
+    %pushi/vec4 0, 0, 1;
+    %ix/load 3, 1, 0;
+    %flag_set/imm 4, 0;
+    %ix/load 4, 0, 0; Constant delay
+    %assign/vec4/a/d v0x1be1d120, 0, 4;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0x1bdf9f20_0;
+    %ix/load 3, 0, 0;
+    %flag_set/imm 4, 0;
+    %ix/load 4, 0, 0; Constant delay
+    %assign/vec4/a/d v0x1be1d120, 0, 4;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %load/vec4a v0x1be1d120, 4;
+    %ix/load 3, 1, 0;
+    %flag_set/imm 4, 0;
+    %ix/load 4, 0, 0; Constant delay
+    %assign/vec4/a/d v0x1be1d120, 0, 4;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "../../../../common/cdc_sync.v";
+# EOF

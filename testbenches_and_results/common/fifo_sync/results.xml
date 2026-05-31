@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780225561" />
+    <testcase name="test_fifo_sync" classname="test_fifo_sync" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/common/fifo_sync/test_fifo_sync.py" lineno="5" time="0.013104438781738281" sim_time_ns="61.0" ratio_time="4654.911287388109" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228300" />
+    <testcase name="test_uart_16550_basic" classname="test_uart_16550" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/peripherals/uart_16550/test_uart_16550.py" lineno="5" time="0.0014729499816894531" sim_time_ns="120.0" ratio_time="81469.16154095177" />
+  </testsuite>
+</testsuites>

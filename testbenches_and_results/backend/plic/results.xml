@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780227630" />
+    <testcase name="test_plic_basic" classname="test_plic" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/backend/plic/test_plic.py" lineno="5" time="0.01064443588256836" sim_time_ns="120.0" ratio_time="11273.495497916947" />
+  </testsuite>
+</testsuites>

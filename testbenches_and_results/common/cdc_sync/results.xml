@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780225556" />
+    <testcase name="test_cdc_sync" classname="test_cdc_sync" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/common/cdc_sync/test_cdc_sync.py" lineno="5" time="0.001806020736694336" sim_time_ns="60.0" ratio_time="33222.2099009901" />
+  </testsuite>
+</testsuites>

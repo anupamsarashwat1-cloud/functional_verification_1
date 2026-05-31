@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228062" />
+    <testcase name="test_sram_512kx8_180nm_basic" classname="test_sram_512kx8_180nm" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/memory/sram_512kx8_180nm/test_sram_512kx8_180nm.py" lineno="5" time="0.39776134490966797" sim_time_ns="125.0" ratio_time="314.2587926144197" />
+  </testsuite>
+</testsuites>

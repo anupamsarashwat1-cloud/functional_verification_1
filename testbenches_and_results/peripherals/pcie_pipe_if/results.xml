@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1780228282" />
+    <testcase name="test_pcie_pipe_if_basic" classname="test_pcie_pipe_if" file="/home/anupam-sarashwat/project_penguin_verification/verification/cocotb/peripherals/pcie_pipe_if/test_pcie_pipe_if.py" lineno="5" time="0.017989158630371094" sim_time_ns="120.0" ratio_time="6670.684408630653" />
+  </testsuite>
+</testsuites>
